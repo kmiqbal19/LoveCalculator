@@ -1,0 +1,154 @@
+/* Universal  */
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+/* html */
+:root {
+  font-size: 62.5%;
+  box-sizing: border-box;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  --main-color: #ff4c68;
+  --secondary-color: #f78b9b94;
+  background-color: var(--main-color);
+  --text-color: #f4f6ff;
+}
+footer {
+  width: 80%;
+  margin: 1rem auto;
+  text-align: center;
+  background-color: #f57487;
+  border-radius: 1rem;
+}
+.main-header {
+  background-color: var(--secondary-color);
+  border: 1rem solid #f78b9b2a;
+  margin: 4rem auto 2rem;
+  width: 80%;
+  text-align: center;
+  height: 20vh;
+  border-radius: 2rem;
+}
+.head-welcome {
+  font-size: 3rem;
+  margin-top: 3.5rem;
+  color: var(--text-color);
+}
+
+.main-section {
+  background-color: var(--secondary-color);
+  border: 1rem solid #f78b9b2a;
+  margin: 2rem auto 2rem;
+  width: 80%;
+  text-align: center;
+  height: 60vh;
+  border-radius: 2rem;
+}
+.main-label {
+  display: block;
+  font-size: 3rem;
+  margin: 3rem auto 2rem;
+  color: var(--text-color);
+}
+.main-input {
+  height: 4rem;
+  border-radius: 1rem;
+  outline: none;
+  border: none;
+  padding: 2rem;
+  background-color: rgba(255, 255, 255, 0.431);
+}
+.main-input::placeholder {
+  color: rgba(255, 255, 255, 0.89);
+}
+.btn-submit {
+  width: 15rem;
+  height: 5rem;
+  border-radius: 1rem;
+  margin-top: 2rem;
+  font-size: 2rem;
+  border: none;
+  background-color: var(--main-color);
+  color: var(--text-color);
+}
+.btn-submit:hover {
+  background-color: var(--secondary-color);
+  color: rgba(255, 255, 255, 0.979);
+}
+.btn-submit:active {
+  background-color: black;
+  color: rgba(255, 255, 255, 0.979);
+}
+.hidden {
+  display: none;
+}
+.invisible {
+  visibility: hidden;
+}
+.age-input {
+  /* display: block; */
+  width: 8rem;
+  height: 4rem;
+  border-radius: 1rem;
+  outline: none;
+  border: none;
+  padding: 2rem;
+  background-color: rgba(255, 255, 255, 0.431);
+  color: var(--text-color);
+}
+.result {
+  color: var(--text-color);
+  font-size: 2rem;
+}
+.copyright {
+  padding: 2rem;
+  color: var(--text-color);
+}
+.animation-heart {
+  width: 20rem;
+  height: 20rem;
+  animation-name: heart-anime;
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
+  transition: all 0.5s ease-in-out;
+  mix-blend-mode: multiply;
+}
+@keyframes heart-anime {
+  0% {
+    opacity: 0;
+  }
+  10% {
+    opacity: 1;
+  }
+  20% {
+    opacity: 0;
+  }
+  30% {
+    opacity: 1;
+  }
+  40% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  60% {
+    opacity: 0;
+  }
+  70% {
+    opacity: 1;
+  }
+  80% {
+    opacity: 0;
+  }
+  90% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
